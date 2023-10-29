@@ -61,7 +61,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/user/register`,
+        `https://git-projects-cj6th77rv-shreya-sonis-projects.vercel.app/api/food`,
         currentUser
       );
       console.log("User",response)
@@ -80,7 +80,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/user/login`,
+        `https://git-projects-cj6th77rv-shreya-sonis-projects.vercel.app/api/food`,
         currentUser
       );
       const { user, token } = response.data;

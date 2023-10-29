@@ -15,7 +15,7 @@ const Shop = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`http://localhost:3001/api/food`);
+        const response = await axios.get(`https://git-projects-cj6th77rv-shreya-sonis-projects.vercel.app/api/food`);
         console.log("responseeee",response.data);
         setProduct(response.data);
         setFoodOnly(response.data.filter((item) => item.category === "food"));
